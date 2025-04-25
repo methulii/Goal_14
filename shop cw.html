@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Theme Item Shop</title>
+    <link rel="stylesheet" href="shop cw.css">
+    
+</head>
+<body>
+    <div class="video">
+        <video autoplay muted loop id="Video">
+            <source src="ocean111.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="header-content">
+        
+        <nav >                                                          <!--navigation bar--> 
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop cw.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <h1>Life Below Water Shop</h1>
+    <!--life below water logo--> 
+    <img src="https://media.giphy.com/media/fCo6Z7BDPYhKEdS58C/giphy.gif?cid=790b76115rjfi0s0t06ion9an65s3zsqhwvcj1fxojftb8px&ep=v1_gifs_search&rid=giphy.gif&ct=g.gif" alt="Logo" class="logo">            
+	
+     
+    <div class="slideshow-container"><!--show some posters--> 
+        <div class="slide fade">
+            <img src="data:image/png;base64,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" style="width:100%">
+           
+        </div>
+        <div class="slide fade">
+            <img src="https://img.freepik.com/free-psd/world-oceans-day-instagram-posts-collection-with-marine-life-plastic-polution_23-2149406977.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" style="width:100%">
+            
+        </div>
+        <div class="slide fade">
+            <img src="https://img.freepik.com/free-vector/diving-hand-drawn-flat-facebook-cover_23-2149435146.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" style="width:100%">
+            
+        </div>
+        <div class="slide fade">
+            <img src="E_SDG_action_card_twitter_14.jpg" style="width:600px ">
+            
+        </div>
+
+    </div>
+    
+    <div>
+	<h2 style=color:white;> Welcome to Life Below Water</h2> <!--title--> 
+		<p class="intro">
+
+			Welcome to Life Below Water! We are thrilled to introduce you to our unique collection of eco-friendly products crafted from reclaimed ocean materials. Our mission is to promote sustainability and raise awareness about the importance of ocean conservation. Each item in our shop tells a story of transformation, turning what was once discarded into beautiful, functional products that contribute to a healthier planet.
+    </div>
+
+    
+        <h2 style=color:white;> Our Products</h2>
+            <p><b>Frocks</b>: Stylish and sustainable, our frocks are made from repurposed ocean fabrics, offering you a chic wardrobe choice that helps reduce waste and protect marine life.</p>
+            
+            <p><b>Handbags</b>: Our eco-friendly handbags are crafted from recycled ocean plastics and materials. Each handbag is a testament to the possibility of turning pollution into practical, fashionable accessories.</p>
+            
+            <p><b>Books</b>: Discover our collection of books made from recycled ocean paper. These books not only provide a great read but also support our mission to reduce waste and conserve resources.</p>
+            
+            <p><b>Other Items</b>: Explore a variety of other unique products, all made from reclaimed ocean materials. From accessories to home décor, each piece is designed with sustainability and style in mind.</p>
+    
+	
+	<nav class="bottom-nav">  <!--navigation bar for go to category--> 
+		<ul>
+			<li><a href="#Frocks">FROCKS</a></li>
+			<li><a href="#Handbags">HANDBAGS</a></li>
+			<li><a href="#Books">BOOKS</a></li>
+			<li><a href="#Others">OTHER ITEMS</a></li>
+		</ul>
+	</nav>
+
+	
+	<h2>Frocks</h2>  
+    <div class="product-widget" id="Frocks">
+        <div class="product">
+            
+			
+			<img src="https://img.freepik.com/premium-photo/dancing-elegance-visual-symphony-dresses-ballet-fantasy_745528-83415.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 1">
+            <h3>MERMAID</h3>
+			<div class="product-details">
+                <h4>MERMAID</h4>
+                <p>$219.99</p>
+                <label for="size1">Size:</label>
+                <select id="size1">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://img.freepik.com/premium-photo/painting-woman-blue-dress-is-beach_1081342-13098.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 2">
+            <h3>OCEAN BLUE</h3>
+			<div class="product-details">
+                <h4>OCEAN BLUE</h4>
+                <p>$524.99</p>
+                <label for="size2">Size:</label>
+                <select id="size2">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+        <div class="product">
+            <img src="https://img.freepik.com/free-photo/travel-scene-with-pastel-colors-dreamy-atmosphere_23-2151450613.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 3">
+            <h3>PASTEL COLOUR </h3>
+			<div class="product-details">
+                <h4>PASTEL COLOUR  </h4>
+                <p>$250.99</p>
+                <label for="size3">Size:</label>
+                <select id="size3">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/fashion-model-wearing-long-dress-wind-blowing_943281-91342.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 4">
+            <h3>SHORT HAND LONG DRESS</h3>
+			<div class="product-details">
+                
+                <h4>SHORT HAND LONG DRESS</h4>
+                <p>$420.99</p>
+                <label for="size4">Size:</label>
+                <select id="size4">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/hd-digital-art-wallpaper-background_783884-157022.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 5">
+            <h3>COMFY AND SHORT</h3>
+			<div class="product-details">
+                <h4>COMFY AND SHORT</h4>
+                <p>$300.99</p>
+                <label for="size5">Size:</label>
+                <select id="size5">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/woman-model-field-beach-professional-photo-fashion-high-resolution_999512-60.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 6">
+            <h3>BLACK DRAGON</h3>
+			<div class="product-details">
+                <h4>BLACK DRAGON</h4>
+                <p>$922.99</p>
+                <label for="size6">Size:</label>
+                <select id="size6">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+	</div>
+		<hr>
+		<h2> HandBag</h2>  
+		<div class="product-widget" id="Handbags">
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/family-beach-sunset_1273898-3209.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized1" alt="Product 1">
+            <h3>PINKY</h3>
+			<div class="product-details">
+                <h4>PINKY</h4>
+                <p>$32.99</p>
+                <label for="size7">Size:</label>
+                <select id="size7">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/family-beach-sunset_1273898-3243.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized" alt="Product 2">
+            <h3>SKY</h3>
+			<div class="product-details">
+                <h4>SKY</h4>
+                <p>$22.99</p>
+                <label for="size8">Size:</label>
+                <select id="size8">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/family-beach-sunset_1273898-3430.jpg?w=740" alt="Product 3">
+            <h3>NATURE</h3>
+			<div class="product-details">
+                <h4>NATURE</h4>
+                <p>$22.99</p>
+                <label for="size9">Size:</label>
+                <select id="size9">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/family-beach-sunset_1273898-3402.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized" alt="Product 4">
+            <h3>ORANGE</h3>
+			<div class="product-details">
+                <h4>ORANGE</h4>
+                <p>$20.99</p>
+                <label for="size10">Size:</label>
+                <select id="size10">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/beach-bag-filled-with-vibrant-summer-accessories-is-set-against-backdrop-tropical-beach_339391-3778.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized" alt="Product 5">
+            <h3>BEACH STYLE</h3>
+			<div class="product-details">
+                <h4>BEACH STYLE</h4>
+                <p>$40.99</p>
+                <label for="size11">Size:</label>
+                <select id="size11">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/family-beach-sunset_1273898-3221.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized" alt="Product 6">
+			<h3>CRAFTY</h3>
+            <div class="product-details">
+                <h4>CRAFTY</h4>
+                <p>$19.99</p>
+                <label for="size12">Size:</label>
+                <select id="size12">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		</div>
+		
+		<hr>
+		<h2> Books</h2>  
+		<div class="product-widget" id="Books">
+		<div class="product">
+            <img src="https://img.freepik.com/free-psd/world-ocean-day-poster-template_23-2149383968.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 1">
+            <h3>SAVE THE OCEAN</h3>
+			<div class="product-details">
+                <h4>SAVE THE OCEAN</h4>
+                <p>$12.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/free-psd/poster-template-with-world-ocean-day-theme_23-2148471810.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 2">
+            <h3>DO YOU CARE FOR THE OCEAN</h3>
+			<div class="product-details">
+                <h4>DO YOU CARE FOR THE OCEAN</h4>
+                <p>$22.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		<div class="product">
+            <img src="https://img.freepik.com/free-vector/flat-vertical-flyer-template-world-oceans-day-celebration_23-2150343567.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 3">
+            <h3>WORLD OCEAN DAY</h3>
+			<div class="product-details">
+                <h4>WORLD OCEAN DAY</h4>
+                <p>$25.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-psd/save-oceans-print-template_23-2149057141.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 4">
+            <h3>PROTECT THE REEFS</h3>
+			<div class="product-details">
+                <h4>PROTECT THE REEFS</h4>
+                <p>$30.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-psd/save-oceans-print-template_23-2149057140.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 5">
+            <h3>KEEP THE OCEAN CLEAN</h3>
+			<div class="product-details">
+                <h4>KEEP THE OCEAN CLEAN</h4>
+                <p>$50.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/free-psd/poster-template-with-world-ocean-day-design_23-2148471812.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 6">
+             <h3>CLEAN OUR OCEAN FROM PLASTIC</h3>
+			<div class="product-details">
+                <h4>CLEAN OUR OCEAN FROM PLASTIC</h4>
+                <p>$42.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+        
+		<h2> Other Items</h2>
+		<div class="product-widget" id="Others">
+		<div class="product">
+            <img src="https://img.freepik.com/free-photo/beach-concept-with-little-sailing-boat_23-2147647024.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 1">
+            <h3>SHIP</h3>
+			<div class="product-details">
+                <h4>SHIP</h4>
+                <p>$50.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/coastal-themed-sacred-cross-made-driftwood-adorned-wi-cross-palm-sunday-photo-christian-art_1020495-171549.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 2">
+            <h3>LIGHT HOUSE</h3>
+			<div class="product-details">
+                <h4>LIGHT HOUSE</h4>
+                <p>$120.99</p>
+                
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		<div class="product">
+            <img src="https://img.freepik.com/free-photo/3d-dolphin-with-plants_23-2151066496.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 3">
+            <h3>DOLPHINE FAMILY</h3>
+			<div class="product-details">
+                <h4>DOLPHINE FAMILY</h4>
+                <p>$232.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/nautical-themed-sacred-cross-made-twisted-ropes-adorn-cross-palm-sunday-photo-christian-art_1020495-172367.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 4">
+            <h3>ORNAMENT WITH PEARLS</h3>
+			<div class="product-details">
+                <h4>ORNAMENT WITH PEARLS</h4>
+                <p>$102.99</p>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/seashell-sculpture-with-seashells-top_1020495-475355.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 5">
+            <h3>SHELL 1</h3>
+			<div class="product-details">
+                <h4>SHELL 1</h4>
+                <p>$122.99</p>
+                <label for="size">Size:</label>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		<div class="product">
+            <img src="https://img.freepik.com/premium-photo/resin-podiums-with-seashell-inspired-design-two-tier-podiu-nature-inspired-background-decor_1020495-471517.jpg?uid=R140165929&ga=GA1.1.383341916.1717565883&semt=ais_user-customized.jpg" alt="Product 6">
+            <h3>SHELL 2</h3>
+			<div class="product-details">
+                <h4>SHELL 2</h4>
+                <p>$130.99</p>
+                <label for="size">Size:</label>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+        
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+        <h2 style=color:black;>Order Summary</h2>
+        <div class="Basket" id="Basket">
+            
+        </div>
+        <div class="total-price" id="totalPrice">Total: $0.00</div>
+        <button class="checkout" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        <button class="clear-basket" onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <p>Join Us in making a difference. Together, we can protect our oceans and promote a more sustainable future. Browse our collection, learn about our mission, and become a part of the Life Below Water community. Thank you for supporting our cause and choosing products that make a positive impact on the planet.</p>
+
+    <script src="shop cw.js"></script><!--shop javascript--> 
+<footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Goal 14: Life Below Water. All Rights Reserved.</p><br><br><br>
+</footer>
+</body>
+</html>
