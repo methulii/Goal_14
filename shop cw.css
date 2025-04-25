@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }          /* display animation*/
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+    animation: fadeIn 1.5s ease-in-out;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin-left: 200px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    padding: 20px 40px;
+    width:900px;
+}
+
+nav {                            /* navigation bar*/
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.video {
+    position:fixed;                     /* background video*/
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+	transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;                /* headline*/
+    font-size: 4rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 10px 20px rgba(17, 0, 255, 0.9);
+    padding: 10px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1em;
+    background-image: linear-gradient(#000000, #0314fe);
+    color: transparent; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    text-shadow: 0 1px 50px white;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1em;
+    background-color: black;
+    text-align: center;
+    text-shadow: 0 4px 8px black;
+}
+
+p{
+    font-family: 'popins';
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    padding:5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #00a2ff28;
+    
+
+}
+
+.logo {
+    position: absolute;                  /* life below water logo*/
+    top: 35px;
+    left: 35px;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slideshow-container {                       /* display show some posters*/
+    width: auto;
+    height: 200PX;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    padding: 110px;
+    overflow: hidden;
+}
+
+.slideshow-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.intro {
+    padding: 20px;
+    width: 1000px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    text-shadow: 0 4px 8px lightblue;
+    margin-bottom: 100px;
+    font-family: cambria;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.bottom-nav ul {
+    list-style-type: none;
+    margin-top: 150px; 
+    margin-bottom: 0px;
+    padding: 10px 0;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    border-radius: 1em;
+}
+
+.bottom-nav ul li {
+    margin: 0 50px; 
+    padding: 10px 20px;
+    background-image: linear-gradient(#0924CF, #03FEEF);
+    border-radius: 0.5em; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 1.2em; 
+    transition: background-image 0.3s ease;
+}
+
+.bottom-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.bottom-nav ul li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.product-widget {                                            /* display products*/
+    display: grid;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px;
+    grid-template-columns: repeat(3, 6fr);
+    text-align: center;
+}
+
+.product {
+    background: #00a2ff;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    position: relative;
+    width: 260px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto;
+    box-sizing: border-box;
+    box-shadow: 0 40px 80px black;
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 40px 80px black;
+    
+}
+
+.product-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(252, 252, 252, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.product img:hover + .product-details, .product-details:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product h {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #000000;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 1.5em;
+    color: #0123FF;
+    font-weight: bold;
+}
+
+.product label, .product select, .product input {
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+    color: black;
+    font-weight: bold;
+}
+
+.product select, .product input {
+    padding: 5px;
+    font-size: 0.7em;
+}
+
+.product button {
+    background: #007acc;
+    color: black;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7em;
+    margin-top: 10px;
+    width: 90%;
+    text-transform: uppercase;
+}
+
+.product button:hover {
+    background: #32C451;
+    text-transform: uppercase;
+}
+
+.order-summary {                                         /* display oredered items*/
+    background: rgba(230, 247, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #b3daff;
+    border-radius: 10px;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.order-summary h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.basket {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.basket-item div {
+    flex: 1;
+}
+
+.total-price {                                           /* display total*/
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.checkout, .clear-basket {
+    background: #007acc;
+    color: #000000;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.checkout:hover, .clear-basket:hover {
+    background: #005f99;
+}
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
