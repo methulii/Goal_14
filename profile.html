@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user profile.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="life below water.mp4" type="video/mp4">
+        
+    </video>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="14.png" alt="logo" width="80" height="80">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop cw.html">Shop</a></li>
+                    <li><a href="profile.html"class="active">Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="container">
+        <h2>USER PROFILE</h2>
+        
+        <div class="step active" id="step1">
+            <h3>STEP 1</h3>
+            <label for="name">Your Name</label>
+            <input type="text" id="name"><br>
+            <label for="surname">Your Surname</label>
+            <input type="text" id="surname"><br>
+            <label for="age">Age</label>
+            <input type="number" id="age"><br>
+            <label for="gender">Your gender</label>
+            <input type="text" id="gender"><br>
+            <label for="privacy">Agree with privacy terms</label>
+            <input type="checkbox" id="privacy"><br>
+            <button onclick="previousStep(1)">Previous</button>
+            <button onclick="nextStep(1)">Next</button>
+            <button onclick="skipStep(1)">Skip</button>
+        </div>
+        <div class="step" id="step2">
+            <h3>STEP 2</h3>
+            <label for="reason">Reason</label>
+            <input type="text" id="reason"><br>
+            <label for="DOA">Date of Assignment</label>
+            <input type="text" id="DOA"><br>
+            <label for="Task">Task</label>
+            <input type="text" id="Task"><br>
+            <label for="assignmentType">Assignment Type</label>
+            <input type="text" id="assignmentType"><br>
+            <button onclick="previousStep(2)">Previous</button>
+            <button onclick="nextStep(2)">Next</button>
+            <button onclick="skipStep(2)">Skip</button>
+        </div>
+        <div class="step" id="step3">
+            <h3>STEP 3</h3>
+            <label for="study">Area of Study</label>
+            <input type="text" id="study"><br>
+            <label for="highestDegree">Highest Degree</label>
+            <input type="text" id="highestDegree"><br>
+            <label for="university">University/Institution</label>
+            <input type="text" id="university"><br>
+            <label for="year">Completion Year</label>
+            <input type="text" id="year"><br>
+            <label for="country">Country</label>
+            <input type="text" id="country"><br>
+            <button onclick="previousStep(3)">Previous</button>
+            <button onclick="nextStep(3)">Next</button>
+            <button onclick="skipStep(3)">Skip</button>
+        </div>
+        <div class="step" id="step4">
+            <h3>STEP 4</h3>
+            <label for="volunteering">Availability for Volunteering (min-max hours per week)</label>
+            <input type="text" id="volunteering"><br>
+            <label for="tel">Tel</label>
+            <input type="number" id="tel"><br>
+            <label for="email">Email</label>
+            <input type="email" id="email"><br>
+            <button onclick="previousStep(4)">Previous</button>
+            <button onclick="nextStep(4)">Finish</button>
+            <button onclick="skipStep(4)">Skip</button>
+        </div>
+        <div class="details" id="details">
+            <h2>Your Profile</h2>
+            <p>Name: <span id="outputName"></span></p>
+            <p>Surname: <span id="outputSurname"></span></p>
+            <p>Age: <span id="outputAge"></span></p>
+            <p>Gender: <span id="outputGender"></span></p>
+            <p>Privacy Agreement: <span id="outputPrivacy"></span></p>
+            <p>Reason: <span id="outputReason"></span></p>
+            <p>Date of Assignment: <span id="outputDOA"></span></p>
+            <p>Task: <span id="outputTask"></span></p>
+            <p>Assignment Type: <span id="outputAssignmentType"></span></p>
+            <p>Area of Study: <span id="outputStudy"></span></p>
+            <p>Highest Degree: <span id="outputHighestDegree"></span></p>
+            <p>University/Institution: <span id="outputUniversity"></span></p>
+            <p>Completion Year: <span id="outputYear"></span></p>
+            <p>Country: <span id="outputCountry"></span></p>
+            <p>Availability for Volunteering: <span id="outputVolunteering"></span></p>
+            <p>Tel: <span id="outputTel"></span></p>
+            <p>Email: <span id="outputEmail"></span></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li>
+                    <a href="20232912page editor">Shaleeka Bandara</a>
+                    <span> - Student Role: 1</span>
+                    
+                </li>
+                <li>
+                    <a href="20232895page editor.html">Methuli Perera</a>
+                    <span> - Student Role: 2</span>
+                    
+                </li>
+                <li>
+                    <a href="20232974page editor.html">Oshadhi Mendis</a>
+                    <span> - Student Role: 3</span>
+                    
+                </li>
+                <li>
+                    <a href="20233002page editor.html">Panchani Charunya</a>
+                    <span> - Student Role: 4</span>
+                    
+            </ul>
+        </div>
+    </footer>
+    
+
+    <script src="user profile.js"></script>
+</body>
+</html>
