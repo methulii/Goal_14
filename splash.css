@@ -1,0 +1,93 @@
+
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {                      /* background video*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.logo{                           /* life below water logo*/
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 150px;
+    height: auto;
+}
+
+.mission {
+    max-width: 700px;
+    margin-top: 300px;
+    background-color: #ffffff1e;
+    padding: 5px;
+    border-radius: 100px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    position:fixed;
+   
+}
+
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;
+}
+.nav ul {                                /* display group members*/
+    list-style-type: none; 
+    margin-top: 550px; 
+    padding: 5px 0;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    border-radius: 1em;
+    background-color:transparent;    
+}
+
+.nav ul li {
+    margin: 0 50px; 
+    padding: 5px 20px;
+    background-color:white;
+    border-radius: 1em;
+    color:rgb(31, 63, 150);
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 900; 
+    font-size: 1.2em;
+    text-shadow: 0 1px 50px rgb(0, 153, 255); 
+    transition: background-image 0.3s ease;
+}
+
+.progress-bar {                              /* progressing*/
+    position: absolute;
+    bottom: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 20px;
+    background-color: #c1d5ff;
+    border-radius: 15px;
+    overflow: hidden;   
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-image:linear-gradient(rgb(0, 47, 255),rgb(0, 0, 0));
+    transition: width 0.1s;
+}
